@@ -276,7 +276,7 @@ input {
 }
 
 .card {
-  border: 1px solid var(--accent);
+  border: 1px solid var(--black);
   padding: 20px 30px;
   transition: 200 ease-in-out;
   border-radius: 16px;
@@ -296,7 +296,6 @@ input {
   grid-column: 1 /-1;
   padding: 5px;
   border-radius: 8px;
-  box-shadow: 0px;
 }
 
 .card > .red {
@@ -304,5 +303,5 @@ input {
 }
 
 .card > .green {
-  background-color: rgb(198, 236, 161);
+  background-color: var(--secondary);
 }
