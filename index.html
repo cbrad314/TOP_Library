@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b5347c1166.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <h1>library</h1>
+    <div class="modal">
+      <form action="">
+        <div class="modal-header">
+          <p class="title">Add Book</p>
+          <button type="button" id="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <label for="title">title</label>
+          <input type="text" name="title" id="title" />
+          <label for="author">author</label>
+          <input type="text" name="author" id="author" />
+          <div class="checkbox-container">
+            <label for="is-read">Have you read this?</label>
+            <input
+              type="checkbox"
+              name="is-read"
+              id="is-read"
+              value="bullshit"
+            />
+          </div>
+          <button id="submit" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div class="main">
+      <button id="add-book">+ add book</button>
+      <div class="grid"></div>
+      <div id="overlay"></div>
+    </div>
+  </body>
+</html>
